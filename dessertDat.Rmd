@@ -1,0 +1,14 @@
+---
+title: "desserts"
+author: "Woodward"
+date: "11/29/2021"
+output: html_document
+---
+```{r}
+favDessert<- c("lemonBar","brownie", "berryCrumble","bananaBread", "pumpkinPie")
+dessertRanking<-c(2,4,3,5,1)
+quantity<- c(3,1,4,2,5)
+dessertDat<-cbind.data.frame(favDessert,dessertRanking,quantity)
+write.csv(dessertDat)
+```
+

@@ -1,0 +1,10 @@
+```{r}
+View(dessertDat)
+summary(dessertDat)
+library(Rmisc)
+mean(dessertDat$dessertRanking)
+summarySE(dessertDat, measurevar = "dessertRanking", groupvars = "quantity", na.rm = FALSE, conf.interval = 0.95)
+library(ggplot2)
+ggplot(dessertDat, aes(dessertRanking, quantity)+geom_bar(stat = "identity"))
+```
+
